@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Turno</title>
+    <link rel="stylesheet" href="styles2.css"> 
+</head>
+<body>
+    <div class="turno-container">
+        <h2>Seleccione una Fecha y Horario para su Turno</h2>
+        
+        
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        
+        
+        <label for="horario">Horario:</label>
+        <select id="horario" name="horario" required>
+            <option value="" disabled selected>Seleccione un horario</option>
+            
+            <option value="09:00">09:00 - 10:00</option>
+            <option value="10:00">10:00 - 11:00</option>
+            <option value="11:00">11:00 - 12:00</option>
+            
+            <option value="16:00">16:00 - 17:00</option>
+            <option value="17:00">17:00 - 18:00</option>
+            <option value="18:00">18:00 - 19:00</option>
+            <option value="19:00">19:00 - 20:00</option>
+            <option value="20:00">20:00 - 21:00</option>
+        </select>
+        
+        
+        <button type="button">Reservar Turno</button>
+        
+        
+        <p id="mensaje-confirmacion"></p>
+    </div>
+</body>
+</html>
